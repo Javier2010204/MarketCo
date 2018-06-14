@@ -1,0 +1,88 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+/* Colores */
+$colors:(
+	pink: #E91E63,
+	red: #D32F2F,
+	dark-red: #B71C1C,
+	dark-blue: #0D47A1,
+	blue: #1976D2,
+	light-blue: #03A9F4,
+	teal: #009688,
+	light-teal: #64FFDA,
+	green: #43A047,
+	light-green: #1DE9B6,
+	light-grey: #B0BEC5,
+	dark-grey: #455A64,
+	grey: #607D8B,
+	indigo: #304FFE,
+	prueba2: #880E4F,
+	prueba: #D81B60,
+	white: #fff,
+	black: black
+);
+
+@each $color-name, $color in $colors{
+	.#{$color-name}{
+		background-color: $color;
+	}
+	.#{$color-name}-text{
+		color: $color !important;
+	}
+}
+/* Paddings */
+.big-padding{
+	padding: 2em;
+}
+.large-padding{
+	padding: 10px 15px;
+}
+.no-padding{
+	padding: 0;
+}
+/* Margenes */
+.top-space{
+	margin-top: 1em;
+}
+.bottom-space{
+	margin-bottom: 2em;
+}
+/* Alineamiento */
+.no-float{
+	float: none !important;
+}
+.inline-block{
+	float: none !important;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: -4px;
+}
+.absolute{
+	position: absolute;
+}
+/* fonts */
+.small{
+	font-size: 12px;
+}
+.normal{
+	font-size: 1.2em;
+}
+.medium{
+	font-size: 1.5em;
+}
+.big{
+	font-size: 3em;
+}
+.bigger{
+	font-size: 4em;
+}
+.ultra-big{
+	font-size: 7em;
+}
+.bold{
+	font-weight: bold;
+}
+
